@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.apolo.circlereveal.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
+    <Button
+        android:id="@+id/btnReveal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center_vertical"
+        android:text="Reveal image" />
 
     <ImageView
-        android:visibility="gone"
+        android:layout_weight="1"
         android:id="@+id/revealImage"
-        android:background="@color/colorAccent"
-        android:layout_gravity="center_vertical"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"/>
+
+
+
 
 </LinearLayout>
